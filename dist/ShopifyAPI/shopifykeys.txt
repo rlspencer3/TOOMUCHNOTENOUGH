@@ -1,0 +1,8 @@
+API KEY
+46d35b16cae90d6ab1a25e22f1ec6f25
+
+EXAMPLE URL
+https://46d35b16cae90d6ab1a25e22f1ec6f25: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@toomuchnotenough.myshopify.com/admin/api/2020-04/orders.json
+
+SHARED SECRET
+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
