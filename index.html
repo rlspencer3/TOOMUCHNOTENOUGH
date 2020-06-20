@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TooMuchNotEnough</title>
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.min.js"></script>
+</head>
+
+<body>
+
+
+
+  <div class="wrapper">
+      
+
+    <!-- NAVBAR
+    =============================== -->
+    <nav class="navbar">
+      
+
+      <div class="logo">MATES</div>
+
+      <div class="media">
+        <ul>
+          <li><a href="./ShopTooMuchNotEnough.html">shop</a></li>
+          <li><a href="#">music</a></li>
+          <li><a href="#">social</a></li>
+          <li><a href="#">videos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- BG TEXT
+    =============================== -->
+    <div class="bg-text">
+      <h1>NotEnough</h1>
+    </div>
+
+    <!-- SLIDER
+    =============================== -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>95</span></p>
+          </div>
+          <div class="slide-text">
+            <h4><span>TooMucNOTENOUGH</span></h4>
+          </div>
+          <button class=listen-here>shop here</button>
+          <div class="slide-img"></div>
+        </div>
+        
+        
+        
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>02</span></p>
+          </div>
+          <div class="slide-text">
+            <h4><span>Way Too Much</span></h4>
+          </div>
+          <button class=listen-here>listen here</button>
+          <div class="slide-img"></div>
+        </div>
+        
+        
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>03</span></p>
+          </div>
+          <div class="slide-text">
+            <h4><span>OffWhitePimp</span></h4>
+          </div>
+          <button class=listen-here>listen here</button>
+          <div class="slide-img"></div>
+        </div>
+        
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>04</span></p>
+          </div>
+          <div class="slide-text">
+            <h4><span>tokyort7</span></h4>
+          </div>
+          <button class=listen-here>listen here</button>
+          <div class="slide-img"></div>
+        </div>
+        
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>05</span></p>
+          </div>
+          <div class="slide-text">
+            <h4><span>tokyogr8</span></h4>
+          </div>
+          <button class=listen-here>listen here</button>
+          <div class="slide-img"></div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    <div id="text"></div>
+        <script>
+            let Size = 0.001;
+
+            function increaseSize() {
+                var elem = document.getElementById("text");
+                var text = new Blotter.Text("TOOMUCHNOTENOUGH", {
+                    family: "Helvetica",
+                    weight: 800,
+                    size: 180,
+                    fill: "red"
+                });
+
+                var material = new Blotter.RollingDistortMaterial();
+
+                material.uniforms.uSineDistortAmplitude.value = 0.04;
+
+                var blotter = new Blotter(material, {
+                    texts: text
+                });
+
+                var scope = blotter.forText(text);
+
+                scope.appendTo(elem);
+
+                Size += 0.001;
+            }
+
+            increaseSize();
+        </script>
+
+
+    <!-- FOOTER
+    =============================== -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="scroll">
+          <p>scroll</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <!-- swiper js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <!-- custom js -->
+  <script src="main.js"></script>
+  <!--Shopify js-->
+  <script src="http://sdks.shopifycdn.com/buy-button/v0.0.2/buybutton.min.js"
+  ></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.15.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.15.3/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+
+</html>
